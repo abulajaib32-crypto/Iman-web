@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Author: Zakaria Muzayan -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Zakaria Muzayan">
+  <meta name="description" content="IMAN Elevate Bootcamp Frontend Track: learn HTML, CSS, and JavaScript by building real projects.">
+  <title>IMAN Elevate Bootcamp | Frontend Track</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Link to the CSS file (style.css is in the same folder) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER AND NAVIGATION ========== -->
+  <header>
+    <nav>
+      <a href="#home" class="logo">IMAN</a>
+      <button id="menu-button" class="menu-button" aria-label="Open menu">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#why-iman">Why IMAN</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== 1. HOME / HERO ========== -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-tag">IMAN Elevate Bootcamp</p>
+          <h1>Frontend Track</h1>
+          <p>Learn to build modern, responsive websites with HTML, CSS, and JavaScript, one real project at a time.</p>
+          <a href="#contact" class="btn">Register now</a>
+          <a href="#projects" class="btn btn-outline">See student projects</a>
+        </div>
+        <pre class="hero-code">&lt;h1&gt;Hello, IMAN&lt;/h1&gt;
+&lt;p&gt;My first web page.&lt;/p&gt;
+&lt;button&gt;Say salam&lt;/button&gt;</pre>
+      </div>
+    </section>
+
+    <!-- ========== 2. ABOUT ========== -->
+    <section id="about" class="bg-white">
+      <div class="container">
+        <h2>About the Frontend Track</h2>
+        <p class="section-intro">The Frontend Track teaches the skills behind modern, interactive websites through practice and projects.</p>
+        <div class="cards">
+          <div class="card">
+            <h3>What the track is</h3>
+            <p>A beginner-friendly part of IMAN Elevate Bootcamp focused on building websites.</p>
+          </div>
+          <div class="card">
+            <h3>What students learn</h3>
+            <p>HTML, CSS, JavaScript, responsive design, and how to make pages interactive.</p>
+          </div>
+          <div class="card">
+            <h3>Who it is for</h3>
+            <p>Students and beginners who want to learn frontend development step by step.</p>
+          </div>
+          <div class="card">
+            <h3>What you can achieve</h3>
+            <p>Build and share your own websites and get a base for further learning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. WHAT YOU'LL LEARN ========== -->
+    <section id="learn">
+      <div class="container">
+        <h2>What you'll learn</h2>
+        <p class="section-intro">Six main topics, taught in this order.</p>
+        <div class="cards">
+          <div class="card"><span class="step-number">1</span><h3>HTML</h3><p>Structure webpages with headings, text, links, images, and forms.</p></div>
+          <div class="card"><span class="step-number">2</span><h3>CSS</h3><p>Style pages and build clear, attractive layouts.</p></div>
+          <div class="card"><span class="step-number">3</span><h3>Responsive design</h3><p>Make sites work well on phones, tablets, and computers.</p></div>
+          <div class="card"><span class="step-number">4</span><h3>JavaScript</h3><p>Add interaction and dynamic behavior to a website.</p></div>
+          <div class="card"><span class="step-number">5</span><h3>DOM manipulation</h3><p>Read and change page elements with JavaScript.</p></div>
+          <div class="card"><span class="step-number">6</span><h3>Web fundamentals</h3><p>Understand how websites are built, hosted, and published.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. WHY IMAN BOOTCAMP ========== -->
+    <section id="why-iman" class="bg-white">
+      <div class="container">
+        <h2>Why IMAN Bootcamp?</h2>
+        <p class="section-intro">You learn by doing, with people who support you.</p>
+        <div class="cards">
+          <div class="card why-card"><h3>Practical learning</h3><p>Apply every concept to a real task right away.</p></div>
+          <div class="card why-card"><h3>Real projects</h3><p>Build websites you can show to others.</p></div>
+          <div class="card why-card"><h3>Mentorship</h3><p>Get guidance and feedback while you build.</p></div>
+          <div class="card why-card"><h3>Community</h3><p>Learn alongside other students and share ideas.</p></div>
+          <div class="card why-card"><h3>Hands-on practice</h3><p>Write code in every session instead of only watching.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. STUDENT PROJECTS ========== -->
+    <section id="projects">
+      <div class="container">
+        <h2>Student projects</h2>
+        <p class="section-intro">Projects built by Zakaria Muzayan while learning frontend development. Filter them by technology.</p>
+
+        <!-- Filter buttons (data-filter is read by script.js) -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="html">HTML</button>
+          <button class="filter-btn" data-filter="css">CSS</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        </div>
+
+        <!-- data-category lists the technologies of each project -->
+        <div class="cards">
+          <div class="card project-card" data-category="html css">
+            <img src="images/about-me.jpg" alt="Preview of the About Me website">
+            <div class="project-info">
+              <h3>About Me - Zakaria Muzayan</h3>
+              <p>A personal website with my interests, skills, and ways to connect.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+          </div>
+
+          <div class="card project-card" data-category="html css">
+            <img src="images/planify.jpg" alt="Preview of the Planify Plans website">
+            <div class="project-info">
+              <h3>Planify Plans</h3>
+              <p>A pricing plans page built as a frontend practice project.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span></div>
+            </div>
+          </div>
+
+          <div class="card project-card" data-category="html css javascript">
+            <img src="images/iman.jpg" alt="Preview of the IMAN Frontend Track website">
+            <div class="project-info">
+              <h3>IMAN Frontend Track</h3>
+              <p>This website: it presents the track, with a menu, filter, slider, FAQ, and form checks.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </div>
+        </div>
+        <p id="no-projects" class="small-note hidden">No projects with this technology yet.</p>
+      </div>
+    </section>
+
+    <!-- ========== 6. TESTIMONIALS ========== -->
+    <section id="testimonials" class="bg-white">
+      <div class="container">
+        <h2>What students say</h2>
+
+        <div class="testimonial card active">
+          <p class="quote">"I had never written code. After a few weeks I had a personal website online."</p>
+          <div class="student"><span class="avatar">A</span><div><strong>Amina K.</strong><br>Frontend Track student</div></div>
+        </div>
+        <div class="testimonial card">
+          <p class="quote">"Building projects made CSS finally make sense. The mentors answered every question."</p>
+          <div class="student"><span class="avatar">Y</span><div><strong>Yusuf A.</strong><br>Frontend Track student</div></div>
+        </div>
+        <div class="testimonial card">
+          <p class="quote">"Learning with a community kept me going when JavaScript got hard."</p>
+          <div class="student"><span class="avatar">H</span><div><strong>Hana T.</strong><br>Frontend Track student</div></div>
+        </div>
+
+        <div class="slider-buttons">
+          <button id="prev-btn" aria-label="Previous testimonial">&larr;</button>
+          <span id="slide-counter">1 / 3</span>
+          <button id="next-btn" aria-label="Next testimonial">&rarr;</button>
+        </div>
+        <p class="small-note">Sample testimonials written for this project.</p>
+      </div>
+    </section>
+
+    <!-- ========== 7. FAQ ========== -->
+    <section id="faq">
+      <div class="container">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is the Frontend Track?</button>
+          <p class="faq-answer">It is the part of IMAN Elevate Bootcamp that teaches frontend web development through practice and projects.</p>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Who can join?</button>
+          <p class="faq-answer">Students and beginners who want to learn how to build websites.</p>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do I need previous experience?</button>
+          <p class="faq-answer">No. The track starts from the basics and goes step by step.</p>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What will I learn?</button>
+          <p class="faq-answer">HTML, CSS, responsive design, JavaScript, DOM manipulation, and web development fundamentals.</p>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How long does the track last?</button>
+          <!-- TODO: replace this answer with the real duration -->
+          <p class="faq-answer">The track follows the IMAN Elevate Bootcamp schedule. Contact us for the current dates and total length.</p>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What projects will I build?</button>
+          <p class="faq-answer">Small, real websites such as a personal About Me page, a pricing plans page, and a track website.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. CONTACT / REGISTRATION ========== -->
+    <section id="contact" class="bg-white">
+      <div class="container">
+        <h2>Contact and registration</h2>
+        <p class="section-intro">Ask a question or register your interest in the Frontend Track.</p>
+
+        <form id="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your full name">
+          <span class="error"></span>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com">
+          <span class="error"></span>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" placeholder="+251 900 000 000">
+          <span class="error"></span>
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message"></textarea>
+          <span class="error"></span>
+
+          <button type="submit" class="btn">Send message</button>
+          <p id="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2026 IMAN For better Islamic life. All rights reserved.</p>
+    <p>Website by Zakaria Muzayan</p>
+  </footer>
+
+  <!-- Link to the JavaScript file (script.js is in the same folder) -->
+  <script src="script.js"></script>
+</body>
+  </html>
